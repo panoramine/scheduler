@@ -15,8 +15,6 @@ export default function InterviewerList(props) {
 
   )
 
-  console.log(mappedInterviewerListItem)
-
   return (
     <section className="interviewers">
       <h4 className="interviewers__header text--light">Interviewer</h4>
