@@ -25,6 +25,7 @@ export function getInterviewersForDay(state, day) {
       interviewers = filteredAppointments[0].interviewers.map(id => state.interviewers[id]);
     }
   }
+
   return interviewers;
 }
 
