@@ -4,7 +4,8 @@ import InterviewerList from "components/InterviewerList";
 
 
 export default function Form(props) {
-
+  
+  const [name, setName] = useState(props.name || "");
   const [student, setStudent] = useState(props.student || "");
   const [interviewer, setInterviewer] = useState(props.interviewer || null);
 
@@ -27,8 +28,9 @@ export default function Form(props) {
             name="name"
             type="text"
             placeholder="Enter Student Name"
-            value={student}
+            value={name}
             onChange={(event) => setStudent(event.target.value)}
+            data-testid="student-name-input"
           />
         </form>
         <InterviewerList
