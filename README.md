@@ -36,8 +36,8 @@ npm run storybook
 
 ## Screenshots
 
-!["Scheduler page"](url)
+!["Scheduler page"](https://github.com/panoramine/scheduler/blob/master/docs/Scheduler1.png?raw=true)
 
-!["Hoving over appointment"](url)
+!["Hoving over appointment"](https://github.com/panoramine/scheduler/blob/master/docs/Scheduler2.png?raw=true)
 
-!["Appointment Form"](url)
+!["Appointment Form"](https://github.com/panoramine/scheduler/blob/master/docs/Scheduler3.png?raw=true)
