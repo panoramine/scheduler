@@ -3,13 +3,14 @@ import "components/DayListItem.scss";
 import classNames from "classnames";
 
 export default function DayListItem(props) {
-
+  // using classNames to give element different appearances
   const dayClass = classNames({
     "day-list__item": true,
     "day-list__item--selected": props.selected,
     "day-list__item--full": props.spots === 0
   });
 
+  // function makes text grammatically correct
   const formatSpots = function() {
     if (props.spots === 0) {
       return `no spots remaining`

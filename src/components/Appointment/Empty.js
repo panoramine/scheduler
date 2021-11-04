@@ -1,8 +1,7 @@
 import React from "react";
 
 export default function Empty(props) {
-
-
+  // displays empty slot on schedule
   return (
     <main className="appointment__add">
       <img

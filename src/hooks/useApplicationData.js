@@ -20,6 +20,7 @@ export default function useApplicationData() {
     for (const id of day.appointments) {
       const appointment = appointments[id];
 
+      // count number of null interviews as number of available spots
       if (!appointment.interview) {
         spots++;
       }

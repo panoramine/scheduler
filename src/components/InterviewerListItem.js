@@ -3,7 +3,7 @@ import classNames from "classnames";
 import React from "react";
 
 export default function InterviewerListItem(props) {
-
+  // classes will change depending on props value
   const interviewerClass = classNames({
     "interviewers__item": true,
     "interviewers__item--selected": props.selected

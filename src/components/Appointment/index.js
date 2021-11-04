@@ -10,6 +10,7 @@ import Confirm from "./Confirm";
 import Error from "./Error";
 
 export default function Appointment(props) {
+  // modes
   const EMPTY = "EMPTY";
   const SHOW = "SHOW";
   const CREATE = "CREATE";
@@ -24,6 +25,7 @@ export default function Appointment(props) {
     props.interview ? SHOW : EMPTY
   );
 
+  // save interview data
   function save(name, interviewer) {
     const interview = {
       student: name,
@@ -37,6 +39,7 @@ export default function Appointment(props) {
     .catch(() => transition(ERROR_SAVE, true))
   }
 
+  // delete interview data
   function remove() {
     transition(DELETING, true);
     props.cancelInterview(props.id)

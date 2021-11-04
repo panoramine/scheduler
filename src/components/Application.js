@@ -14,8 +14,8 @@ export default function Application() {
     cancelInterview
   } = useApplicationData();
   
-  const interviewers = getInterviewersForDay(state, state.day)
-  const appointments = getAppointmentsForDay(state, state.day)
+  const interviewers = getInterviewersForDay(state, state.day);
+  const appointments = getAppointmentsForDay(state, state.day);
   
   const schedule = appointments.map((appointment) => {
     const interview = getInterview(state, appointment.interview);
@@ -60,4 +60,4 @@ export default function Application() {
       </section>
     </main>
   );
-}
+};
